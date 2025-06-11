@@ -1,0 +1,24 @@
+{
+  "name": "test-ai",
+  "version": "1.0.0",
+  "description": "![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plexoio/test-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plexoio/test-ai/issues"
+  },
+  "homepage": "https://github.com/plexoio/test-ai#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
