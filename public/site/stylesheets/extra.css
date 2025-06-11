@@ -1,0 +1,65 @@
+/* General */
+
+.border {
+    border: 1px solid #b1b1b19c;
+}
+
+/* Override */
+
+#blog {
+    margin-bottom: 0px !important;
+}
+
+/* Post Card */
+.bg-thumbnail-image {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding: 0;
+}
+
+/* Post Page */
+.post-image {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    padding: 0;
+}
+
+/* Multi-Line Truncation with Line Breaks */
+.truncation-marker>p,
+.truncation-marker>h2,
+.truncation-marker>.category-truncation {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+}
+
+.truncation-marker>p {
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    max-height: 10.5em;
+}
+
+.truncation-marker>h2 {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    max-height: 3.5em;
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+.truncation-marker>.category-truncation {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    max-height: 3.5em;
+}
+
+/* Display Hero Post in the Blog */
+@media (min-width: 768px) {
+    .hero-post .bg-thumbnail-image {
+        height: 400px;
+    }
+}

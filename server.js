@@ -4,8 +4,13 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, "public")));
+// Serve static files from public/site
+app.use(express.static(path.join(__dirname, "public/site")));
+
+// Fallback to index.html for all other routes
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "public/site", "index.html"));
+});
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
